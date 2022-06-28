@@ -84,32 +84,38 @@
     color: var(--main-color);
     font-size: 30px;
 }
+
 #email-container {
     display: flex;
     justify-content: center;
 }
+
 #email-container ion-icon,
 #email-container a {
     flex: 1 1 0;
 }
+
 #email-container a {
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 225px;
 }
-#email-container ion-icon{
+
+#email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
 }
+
 /*About container*/
-#name{
+#name {
     font-size: 42px;
-    margin-bottom:  15px;
+    margin-bottom: 15px;
 }
-#title{
+
+#title {
     font-size: 24px;
-    margin-bottom:  15px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
@@ -118,7 +124,7 @@
     margin-bottom: 10px;
 }
 
-#btn-project{
+#btn-project {
     font-weight: bold;
     font-size: 16px;
     color: var(--main-text-color);
@@ -134,21 +140,24 @@
     display: flex;
 
 }
+
 #btn-project ion-icon,
 #btn-project span {
     flex-direction: 1 1 0;
 }
-#btn-project ion-icon{
+
+#btn-project ion-icon {
     font-size: 20px;
     max-width: 20px;
 }
-#btn-project:hover{
+
+#btn-project:hover {
     background-color: transparent;
 }
 
 /* Estilizando os containers das Skills */
 
-#skills-section-title{
+#skills-section-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
     margin-bottom: 20px;
@@ -156,17 +165,18 @@
 
 }
 
-#skills-container{
+#skills-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
-.skills-box{
+.skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
 }
+
 .skills-title {
     font-size: 24px;
     margin-bottom: 25px;
@@ -175,43 +185,57 @@
     border-left: 5px solid var(--main-color);
 }
 
-.skills-box i{
+.skills-box i {
     font-size: 40px;
     margin-right: 10px;
 }
 
 /*Mobile*/
 
-@media(max-width: 400px){
-#container{
-    flex-direction: column;
-}
-#bio-container{
-   min-height: auto;
-   border-right: none;
-   border-bottom: 5px solid var(--bio-border-color);
-}
-
-#bio-container h2{
-    display: none;
-}
-#bio-container p{
-    max-width: 60%;
-    margin: 10px auto;
+@media(max-width: 425px) {
+    #container {
+        flex-direction: column;
     }
-#about-container{
-    text-align: center;
-    padding: 30px;
-}
-#about-container .descripion{
-    margin: 10px auto;
-    max-width:  100%;
-    line-height: 26px;
-}
-.skills-box{
-    flex: 1 1 100%;
-    max-width: 100%;
-    tex
-}
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 {
+        display: none;
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description {
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+
+    #btn-project {
+        margin: 20px auto;
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .skills-box i {
+        font-size: 60px;
+    }
+
 
 }
